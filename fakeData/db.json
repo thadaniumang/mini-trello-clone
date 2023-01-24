@@ -1,0 +1,131 @@
+{
+  "lists": [
+    {
+        "listId": "1",
+        "title": "Resources",
+        "todos": [
+            {
+                "id": "1",
+                "title": "JavaScript MDN",
+                "description": "The Mozilla Developer Network's JavaScript documentation",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            {
+                "id": "2",
+                "title": "React documentation",
+                "description": "The official documentation for React",
+                "link": "https://reactjs.org/"
+            },
+            {
+                "id": "3",
+                "title": "Next.js",
+                "description": "The documentation for Next.js, a framework for building server-rendered React applications",
+                "link": "https://nextjs.org/"
+            }
+        ]
+    },
+    {
+      "listId": "2",
+      "title": "Todo",
+      "todos": [
+        {
+          "id": "4",
+          "title": "Buy milk",
+          "description": "Pick up a carton of milk from the grocery store",
+          "date": "2021-05-01",
+          "user": 1
+        },
+        {
+          "id": "5",
+          "title": "Buy bread",
+          "description": "Pick up a loaf of bread from the bakery",
+          "date": "2021-05-01",
+          "user": 2
+        },
+        {
+          "id": "6",
+          "title": "Buy eggs",
+          "description": "Pick up a dozen eggs from the grocery store",
+          "date": "2021-05-01",
+          "user": 1
+        }
+      ]
+    },
+    {
+      "listId": "3",
+      "title": "Doing",
+      "todos": [
+        {
+          "id": "7",
+          "title": "Write report",
+          "description": "Write a report on the current project status",
+          "img": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "date": "2021-05-01",
+          "user": 2
+        },
+        {
+          "id": "8",
+          "title": "Create presentation",
+          "description": "Create a presentation on the company's upcoming plans",
+          "date": "2021-05-01",
+          "user": 1
+        },
+        {
+          "id": "9",
+          "title": "Schedule meeting",
+          "description": "Schedule a team meeting for next week",
+          "img": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+          "user": 1
+        },
+        {
+          "id": "10",
+          "title": "Answer emails",
+          "description": "Answer all pending emails from clients and colleagues",
+          "user": 2
+        }
+      ]
+    },
+    {
+      "listId": "4",
+      "title": "Done",
+      "todos": [
+        {
+          "id": "11",
+          "title": "Gym workout",
+          "description": "Go to the gym and do a full body workout",
+          "user": 1
+        },
+        {
+          "id": "12",
+          "title": "Call mom",
+          "description": "Call mom and catch up with her",
+          "user": 2
+        },
+        {
+          "id": "13",
+          "title": "Read book",
+          "description": "Read a chapter of the current book",
+          "user": 2
+        },
+        {
+          "id": "14",
+          "title": "Watch movie",
+          "description": "Watch a movie on Netflix",
+          "user": 1
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Smith",
+      "img": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    }
+  ]
+}
