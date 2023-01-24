@@ -33,3 +33,20 @@ npm run dev
 - `npm run build`: builds the Next.js app for production
 - `npm start`: starts the Next.js app in production mode at port 8080 (after running `npm run build`)
 
+## Fake API Endpoints
+
+### /lists
+
+- `GET /lists`: Returns a list of all lists
+- `GET /lists/:id`: Returns a specific list by ID
+- `POST /lists`: Creates a new list
+- `PUT /lists/:id`: Updates a specific list by ID
+- `DELETE /lists/:id`: Deletes a specific list by ID
+
+### /users
+
+- `GET /users`: Returns a list of all users
+- `GET /users/:id`: Returns a specific user by ID
+- `POST /users`: Creates a new user
+- `PUT /users/:id`: Updates a specific user by ID
+- `DELETE /users/:id`: Deletes a specific user by ID
