@@ -38,6 +38,8 @@ export default function Home() {
 		fetchUsers();
 		setLoading(false);
 	}, []);
+
+	console.log(lists)
 	
 	return (
 		<>
@@ -46,7 +48,7 @@ export default function Home() {
 			</Head>
 			<main>
 				<Navbar />
-				<Board lists={lists} users={users} loading={loading} />
+				<Board lists={lists} setLists={setLists} users={users} loading={loading} />
 			</main>
 		</>
 	)
