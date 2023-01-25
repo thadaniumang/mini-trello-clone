@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mini Trello Clone
+
+This project uses [json-server](https://github.com/typicode/json-server) to mock a REST API and [Next.js](https://github.com/zeit/next.js) for the front-end.
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. Clone the repository:
+```
+git clone https://github.com/thadaniumang/mini-trello-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```
+npm install
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Start the json-server:
+```
+json-server --watch fakeData/db.json
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+4. Start the Next.js development server in a new terminal:
+```
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. Open [http://localhost:3000](http://localhost:3000) to view the json-server and [http://localhost:8080](http://localhost:8080) to view the Next.js app in the browser.
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev`: starts the Next.js development server at port 8080
+- `npm run build`: builds the Next.js app for production
+- `npm start`: starts the Next.js app in production mode at port 8080 (after running `npm run build`)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Fake API Endpoints
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### /lists
 
-## Deploy on Vercel
+- `GET /lists`: Returns a list of all lists
+- `GET /lists/:id`: Returns a specific list by ID
+- `POST /lists`: Creates a new list
+- `PUT /lists/:id`: Updates a specific list by ID
+- `DELETE /lists/:id`: Deletes a specific list by ID
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### /users
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `GET /users`: Returns a list of all users
+- `GET /users/:id`: Returns a specific user by ID
+- `POST /users`: Creates a new user
+- `PUT /users/:id`: Updates a specific user by ID
+- `DELETE /users/:id`: Deletes a specific user by ID
