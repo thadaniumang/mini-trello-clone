@@ -38,8 +38,6 @@ export default function Home() {
 		fetchUsers();
 		setLoading(false);
 	}, []);
-
-	console.log(lists)
 	
 	return (
 		<>

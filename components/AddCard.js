@@ -1,7 +1,13 @@
-import {useState} from 'react';
+import { useState, useContext } from 'react';
 
-const AddCard = ({ setLists, listId, list, lists }) => {
+// Context
+import { ToastContext } from "../context/ToastContext"
+
+
+const AddCard = ({ setLists, listId, list }) => {
     const [title, setTitle] = useState('');
+
+    const { toasts, addToast } = useContext(ToastContext);
 
     const handleChange = e => {
         setTitle(e.target.value);
@@ -21,7 +27,15 @@ const AddCard = ({ setLists, listId, list, lists }) => {
             let newState = [...prevState];
             newState[listId - 1] = newList;
             return newState;
-        })
+        });
+
+        addToast({
+            message: "Card Added",
+            time: 10000,
+            id: toasts.length + 1,
+            startTime: Date.now(),
+        });
+
     }
 
 

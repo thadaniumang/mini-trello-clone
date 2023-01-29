@@ -5,8 +5,6 @@ import ClipLoader from "react-spinners/ClipLoader"
 
 // Board Component
 const Board = ({ lists, users, loading, setLists }) => {
-	console.log(lists);
-    console.log(typeof lists)
 
     if (loading) {
         return (
@@ -16,13 +14,11 @@ const Board = ({ lists, users, loading, setLists }) => {
         )
     } else if (lists.length !== 0 && users.length !== 0) {
         return (
-            <>
-                <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-                    {lists.map((list) => (
-                        <List key={list.id} list={list} users={users} setLists={setLists} lists={lists} />
-                    ))}
-                </div>
-            </>
+            <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+                {lists.map((list) => (
+                    <List key={list.id} list={list} users={users} setLists={setLists} />
+                ))}
+            </div>
         )
     }
 }

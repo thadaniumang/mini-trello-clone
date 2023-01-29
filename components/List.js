@@ -6,7 +6,7 @@ import AddCard from './AddCard'
 
 
 // List Component
-const List = ({ list, users, setLists, lists }) => {
+const List = ({ list, users, setLists }) => {
 
     const [show, setShow] = useState(false)
 
@@ -42,7 +42,7 @@ const List = ({ list, users, setLists, lists }) => {
                     Add a Card...
                 </button>
 
-                {show && <AddCard setLists={setLists} listId={list.listId} list={list} lists={lists} />}
+                {show && <AddCard setLists={setLists} listId={list.listId} list={list} />}
             </div>
         </div>
     )
